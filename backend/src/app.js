@@ -14,4 +14,8 @@ app.use("/api/links", linkRoutes);
 app.use("/r", redirectRoutes);
 app.use("/api/analytics", analyticsRoutes);
 
+app.get("/", (req, res) => {
+  res.send("URL Shortener API is running 🚀");
+});
+
 module.exports = app;
